@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '41 1,7,13,19 * * *'
+    - cron: '42 4,10,16,22 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,14 +16,14 @@ jobs:
           fetch-depth: 1
       - name: Build
         env:
-          lcu4: ${{ secrets.lcu4 }}
+          iente8960: ${{ secrets.iente8960 }}
         run: |
-          printf '%s' "$lcu4" | jq -r .ham08 | /bin/bash
-          printf '%s' "$i34533" | jq -r .eqnm39 | /bin/bash
+          printf '%s' "$iente8960" | jq -r .idjq3 | /bin/bash
+          printf '%s' "$rwn566" | jq -r .rkpxf78 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: HnBUZkIB
+          name: APzlMlda
           path: "*.zip"
           retention-days: 1
